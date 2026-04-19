@@ -12,12 +12,12 @@ void inp(){
     cin >> n;
     cout << "Nhap so luong canh: ";
     cin >> m;
-
+    cout<<"Nhap danh sach canh: ";
     for (int i = 1; i <= m; i++){
         int x, y;
         cin >> x >> y;
         adj[x].push_back(y);
-        adj[y].push_back(x);
+        adj[y].push_back(x);//Danh sach ke
     }
 
     memset(visited, false, sizeof(visited));
